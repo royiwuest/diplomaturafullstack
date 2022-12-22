@@ -1,0 +1,27 @@
+h1{
+    color: rgb(173, 23, 166);
+    font-family:sans-serif ;
+    text-align: center;
+    margin-top: 25px;
+    border: solid;
+}
+
+h3, h4{
+    color: rgb(7, 7, 165);
+    margin-bottom: 25px;
+}
+
+.destacado{
+    font-size: medium;
+    color: chocolate;
+    font-family: verdana;
+
+}
+
+ul{
+    background-color: antiquewhite;
+    padding: 50px;
+}
+
+
+
