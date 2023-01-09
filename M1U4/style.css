@@ -1,27 +1,58 @@
-h1{
-    color: rgb(173, 23, 166);
-    font-family:sans-serif ;
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Rubik Gemstones', cursive; */
+
+h1 {
+    color: rgb(214, 4, 151);
+    font-family: 'Rubik Gemstones', cursive;
     text-align: center;
     margin-top: 25px;
-    border: solid;
+    text-shadow: -1px -2px 17px rgba(66, 212, 215, 0.7);
 }
 
-h3, h4{
-    color: rgb(7, 7, 165);
+h3,
+h4 {
+    color: black;
     margin-bottom: 25px;
 }
 
-.destacado{
+.destacado {
     font-size: medium;
     color: chocolate;
     font-family: verdana;
 
 }
 
-ul{
+/* ul{
     background-color: antiquewhite;
     padding: 50px;
+} */
+
+img {
+    box-shadow: 10px 20px 5px grey;
+    /* eje x - eje y blur - color */
+    border-radius: 20px;
 }
 
+.listas {
+    width: 200px;
+    height: 150px;
+    background-color: aqua;
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 10px;
+    border-radius: 0px 79px 30px 103px;
+    -webkit-border-radius: 0px 79px 30px 103px;
+    -moz-border-radius: 0px 79px 30px 103px;
+    background: #5cb1d7;
+    border: 17px inset #e4ff50;
+    
 
+}
 
+p{
+    font-family: 'Nanum Gothic', sans-serif
+}
+
+.columnas{
+    column-count: 3
+    
+}
