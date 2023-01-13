@@ -1,0 +1,45 @@
+.contenedor{
+    border: solid black 2px;
+    width: 600px;
+    height: 600px;
+    font-size: 30px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+
+}
+
+.item1{
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item2{
+    background-color: blue;
+    color: white;
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item3{
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
