@@ -1,0 +1,160 @@
+/* 
+font-family: 'Open Sans', sans-serif;
+ */
+
+
+body{
+    font-size: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header{
+    background-color: rgb(208, 239, 248);
+    padding: 16px 0;
+
+}
+
+header h1{
+    color: rgb(23, 111, 194);
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+
+nav{
+    background-color: rgb(13, 100, 199);
+    text-decoration: none;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: space-around; */
+    /* padding: 5px 0; */
+}
+
+nav ul li{
+    flex-grow: 1;
+}
+
+nav ul li a{
+    color:white;
+    font-size: 20px; 
+    padding: 3px 6px;
+    display: block; 
+    text-align: center;
+}
+
+
+nav ul li a:hover{
+    background-color: rgba(2, 2, 73, 0.205);
+
+}
+
+footer{
+    background-color: antiquewhite;
+    color: rgb(36, 35, 35);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav ul li a.activo{
+    background-color: rgba(2, 2, 73, 0.205);
+}
+
+.holder{
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+h2{
+    text-align: center;
+    color: rgb(13, 100, 199);
+}
+
+
+/* Inicio Home*/
+
+.bienvenidos h2{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+.bienvenidos p{
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+img{
+    max-width: 960px;
+}
+
+/* Fin Home */
+
+/* Inicio Contacto */
+.contacto{
+    display: flex;
+    gap: 24px;
+}
+
+.contacto h2{
+    text-align: left;
+}
+.contacto div{
+    width: 100%;
+}
+
+.datos ul li{
+    font-size: 15px;
+
+}
+.formulario label{
+    min-width: 80px;
+}
+
+.formulario label{
+    display: flex;
+    align-items: center;
+}
+
+.formulario textarea{
+    resize: none;
+    height: 150px;
+    width: 70%;
+}
+
+.formulario input{
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.formulario input[type="submit"]{
+    background: #6da9ed;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+   
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+
+/* Fin Contacto */
+
+
+
+
