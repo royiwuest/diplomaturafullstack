@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejerciciosm3u4.css" >
+    <title>Ejecicio1 - M3U4</title>
+</head>
+
+<body class="container">
+    <!-- Crear un documento html con 3 cuadrados que, al ser clickeados, 
+        cambien el color de fondo del documento. Cada cuadrado debera tener 
+        un color distinto. -->
+    <div class="tarjetas">
+        <div class="tarjeta1 tarjeta">1</div>
+        <div class="tarjeta2 tarjeta">2</div>
+        <div class="tarjeta3 tarjeta">3</div>
+    </div>
+   
+    <script>
+      
+        const tarjeta1 = document.querySelector(`.tarjeta1`);
+        const tarjetaDos = document.querySelector(`.tarjeta2`);
+        const tarjetaTres = document.querySelector(`.tarjeta3`);
+
+        tarjeta1.addEventListener("click",fondo);
+        tarjetaDos.addEventListener("click",fondoDos);
+        tarjetaTres.addEventListener("click",fondoTres);
+
+        function fondo(){
+            // alert("click")
+            document.body.style.backgroundColor = "red";
+        }
+        function fondoDos(){
+            // alert("click")
+            document.body.style.backgroundColor = "yellow";  
+        }
+        function fondoTres(){
+            // alert("click")
+            document.body.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+
+</html>
