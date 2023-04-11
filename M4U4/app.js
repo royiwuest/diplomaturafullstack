@@ -4,9 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var session = require('express-session');
+
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var nosotrosRouter = require('./routes/nosotros');
+const { title } = require('process');
 
 var app = express();
 
@@ -20,19 +23,36 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.get('/noticias', function(req,res){
-  res.send ('Hola, soy la página de noticias')
-});
-app.get('/novedades', function(req,res){
-  res.send ('Hola, soy la página de novedades')
-});
-app.get('/contacto', function(req,res){
-  res.send ('Hola, soy la página de contacto')
+app.use(session({
+  secret: 'debesercomplejo',
+  resave: false,
+  saveUninitialized: true,
+}))
+
+// app.use('/', indexRouter);
+// app.use('/users', usersRouter);
+
+app.get('/', function(req, res){
+  var conocido = Boolean(req.session.nombre);
+
+  res.render('index', {
+      title: 'Sesiones en express.js',
+      conocido: conocido,
+      nombre:req.session.nombre
+  });
+
+})
+app.post('/ingresar', function (req, res){
+  if (req.body.nombre){
+    req.session.nombre = req.body.nombre
+  }
+  res.redirect('/');
 });
 
-app.use('/nosotros', nosotrosRouter);
+app.get('/salir', function(req, res){
+  req.session.destroy();
+  res.redirect('/');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
